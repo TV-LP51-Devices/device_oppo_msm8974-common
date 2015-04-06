@@ -50,9 +50,9 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 TARGET_KERNEL_ARCH := arm
 
 # Enable DIAG on debug builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
-TARGET_KERNEL_ADDITIONAL_CONFIG:= cyanogenmod_debug_config
-endif
+#ifneq ($(TARGET_BUILD_VARIANT),user)
+#TARGET_KERNEL_ADDITIONAL_CONFIG:= cyanogenmod_debug_config
+#endif
 
 # Flags
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
