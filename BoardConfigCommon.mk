@@ -145,7 +145,7 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 EXTENDED_FONT_FOOTPRINT := true
 
 # Enable transparent compression in the build
-TARGET_TRANSPARENT_COMPRESSION_METHOD := lz4
+#TARGET_TRANSPARENT_COMPRESSION_METHOD := lz4
 
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
@@ -155,6 +155,7 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+DONT_DEXPREOPT_PREBUILTS := true
 
 # inherit from the proprietary version
 ifneq ($(QCPATH),)
